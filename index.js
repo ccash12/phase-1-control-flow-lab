@@ -1,27 +1,30 @@
-function scuberGreetingForFeet(result){
-  if (result <= 400){
-    return "This one is on me!";
-  }  else if (result >= 2000 && result <2499) {
+function scuberGreetingForFeet (feet) {
+  if (feet <= 400) {
+    return 'This one is on me!';
+  } else if (1999 < feet && feet < 2500) {
     return "I will gladly take your thirty bucks.";
-  } else if (result > 2500) {
-    return "No can do."
+  } else {
+    return "No can do.";
   }
 }
 
+// the else if statement is referencing both needs in the indexTest.js
+
+//at first i thought it woul dbe 2 else if statements but you can but them both into one using the &&
+
 function ternaryCheckCity(city){
-  let thecity = city === 'NYC' ? 'Ok, sounds good.' : "No go.";
-  return (thecity)
+  return (city === 'NYC' ? 'Ok, sounds good.' : 'No go.')
 }
 
-function switchOnCharmFromTip(tip){
-  switch(tip){
-    case'generous':
-     return "Thank you so much.";
-     break;
-    case'not as generous':
-      return "Thank you.";
-      break;
+// the ? acts as the if statement and the : acts as the else statement. === strict equality operator 
+
+function switchOnCharmFromTip (tip) {
+  switch (tip) {
+    case 'generous':
+      return 'Thank you so much.';
+    case 'not as generous':
+      return 'Thank you.';
     default:
-      return "Bye."
+      return 'Bye.';
   }
 }
